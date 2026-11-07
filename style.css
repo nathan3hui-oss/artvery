@@ -105,3 +105,14 @@ h3{font-size:20px;margin:0 0 6px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 .btn-soon{background:rgba(255,255,255,.1);color:var(--fg);border:1px solid rgba(255,255,255,.28);cursor:default}
 .btn-soon:hover{opacity:1}
+/* language picker, top right */
+.top-r{display:flex;align-items:center;gap:10px}
+.lsel{position:relative}
+.lsel summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:6px;color:var(--muted);font-size:14px;padding:6px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.18)}
+.lsel summary::-webkit-details-marker{display:none}
+.lsel summary:hover,.lsel[open] summary{color:var(--fg)}
+.lsel .langs{position:absolute;right:0;top:calc(100% + 8px);flex-direction:column;gap:0;margin:0;min-width:180px;background:var(--surface2);border:1px solid var(--line);border-radius:12px;padding:6px;box-shadow:0 12px 32px rgba(0,0,0,.5)}
+.lsel .langs a{text-decoration:none;color:var(--muted);padding:9px 12px;border-radius:8px;white-space:nowrap}
+.lsel .langs a:hover{background:rgba(255,255,255,.06);color:var(--fg)}
+.lsel .langs a[aria-current]{color:var(--fg)}
+@media (max-width:480px){.top-r .btn-soon{display:none}.top-r .btn-sm{padding:6px 12px;font-size:13px}}

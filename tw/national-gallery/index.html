@@ -33,8 +33,9 @@
 </head>
 <body><header class="top"><div class="wrap top-in">
 <a class="brand" href="../../tw/">Artvery</a>
-<span class="btn btn-sm btn-soon">即將上架 App Store</span>
+<div class="top-r"><details class="lsel"><summary aria-label="語言"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg><span>台灣</span></summary><nav class="langs" aria-label="語言"><a onclick="try{localStorage.setItem('lang','hans')}catch(e){}" href="../../national-gallery/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a><a onclick="try{localStorage.setItem('lang','hk')}catch(e){}" href="../../hk/national-gallery/" hreflang="zh-Hant-HK" lang="zh-Hant-HK">繁體中文（香港）</a><a onclick="try{localStorage.setItem('lang','tw')}catch(e){}" href="../../tw/national-gallery/" hreflang="zh-Hant-TW" lang="zh-Hant-TW" aria-current="true">繁體中文（台灣）</a></nav></details><span class="btn btn-sm btn-soon">即將上架 App Store</span></div>
 </div></header>
+<script>document.addEventListener('click',function(e){var d=document.querySelector('.lsel[open]');if(d&&!d.contains(e.target))d.removeAttribute('open')});</script>
 <main>
 <section class="mhero">
 <img src="../../img/national-gallery.jpg" alt="英國國家藝廊" width="600" height="600">
