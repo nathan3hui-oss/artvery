@@ -116,3 +116,22 @@ h3{font-size:20px;margin:0 0 6px}
 .lsel .langs a:hover{background:rgba(255,255,255,.06);color:var(--fg)}
 .lsel .langs a[aria-current]{color:var(--fg)}
 @media (max-width:480px){.top-r .btn-soon{display:none}.top-r .btn-sm{padding:6px 12px;font-size:13px}}
+
+/* artwork pages, guides */
+.work h1{font-size:clamp(30px,4.5vw,44px);margin:0 0 6px}
+.work-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:40px;align-items:start;margin:16px 0 8px}
+.work-img{margin:0;position:sticky;top:80px}.work-img img{width:100%;border-radius:14px;background:var(--surface2)}
+.orig{font-style:italic;margin:4px 0 0}.work-txt h2{margin-top:28px}
+.excerpt{border-left:2px solid var(--accent);padding:2px 0 2px 18px;margin:0 0 20px}
+.excerpt p{font-family:var(--serif);font-size:18px;line-height:1.9;margin:0 0 14px}
+.facts{display:grid;grid-template-columns:max-content 1fr;gap:8px 20px;margin:0 0 16px}
+.facts dt{color:var(--dim)}.facts dd{margin:0}
+.links{margin:24px 0}
+.wgrid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr))}
+.wcard .card-t{font-size:16px}
+.guide h1{font-size:clamp(32px,5vw,48px)}.guide h2{margin-top:48px}
+.route{padding-left:22px}.route>li{margin:0 0 20px}.route .step{font-family:var(--serif);font-size:18px;margin:0 0 10px}
+@media (max-width:760px){
+  .work-grid{grid-template-columns:1fr;gap:20px}.work-img{position:static}
+  .wgrid{grid-template-columns:repeat(2,1fr)}
+}
