@@ -156,3 +156,5 @@ h3{font-size:20px;margin:0 0 6px}
   .work-grid{grid-template-columns:1fr;gap:20px}.work-img{position:static}
   .wgrid{grid-template-columns:repeat(2,1fr)}
 }
+.listen{margin:18px 0 6px}
+.btn-listen{padding:11px 20px;font-size:15px;line-height:1.35;text-align:left}
